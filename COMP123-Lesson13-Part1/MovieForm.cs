@@ -30,8 +30,8 @@ namespace COMP123_Lesson13_Part1
             //movies[0] = new MovieClass("Season", "Sci-Fi", 2.99);
             movies.Add(new MovieClass("Season", "Sci-Fi", 2.99));
             movies.Add(new MovieClass("Dilemma", "Action", 2.99));
-            movies.Add(new MovieClass("Green", "Sci-Fi", 1.99));
-            movies.Add(new MovieClass("Race2", "Sci-Fi", 1.99));
+            movies.Add(new MovieClass("Green", "Sci-Fi2", 1.99));
+            movies.Add(new MovieClass("Race2", "Sci-Fi3", 1.99));
             
         }
 
@@ -50,6 +50,8 @@ namespace COMP123_Lesson13_Part1
             //showing the inedx
             //MovieTitleTextBox.Text = MovieComboBox.SelectedIndex.ToString();
             int movieIndex = MovieComboBox.SelectedIndex;
+
+            movies.Sort();
 
             //movies.Sort(movies[movieIndex].Title); //sort
             MovieTitleTextBox.Text = movies[movieIndex].Title;
